@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Header from "./components/header"
 import Home from "./components/home"
+import MovieTime from "./components/movieTime"
 
 export default function App() {
    
@@ -13,6 +14,9 @@ export default function App() {
         <Switch>
             <Route path="/" exact>
                 <Home />
+            </Route>
+            <Route path="/film/:filmId" exact>
+                <MovieTime />
             </Route>
         </Switch>
     </BrowserRouter>

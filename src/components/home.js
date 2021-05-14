@@ -21,7 +21,7 @@ export default function Home() {
       <Film poster={f.posterURL} title={f.title} id={f.id} key={f.id} />
     ));
   }
-
+ 
   return (
     <div className="container">
       <p className="page-title">Selecione o filme</p>
