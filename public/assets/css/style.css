@@ -1,0 +1,243 @@
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    background-color: #fafafa;
+  }
+  .header {
+    width: 100%;
+    height: 67px;
+    background-color: #C3CFD9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 36px;
+    line-height: 40px;
+    color: #E8833A;
+  }
+  .container {
+    width: 100%;
+    margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-bottom: 23px;
+  }
+  .container.selection {
+    padding: 25px;
+    margin-bottom: 95px;
+  }
+  .container.success {
+    padding: 25px;
+  }
+  .container .page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #293845;
+  }
+  .page-title.success {
+    margin: 0px auto;
+    text-align: center;
+    width: 180px;
+    font-weight: bold;
+    color: #247a6b;
+  }
+  .container .films-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container .films-list .film {
+    width: 145px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 8px;
+  }
+  .films-list .film img {
+    width: 100%;
+    height: 100%;
+  }
+  .loading {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading img {
+    width: 120px;
+    height: 120px;
+  }
+  .bottom {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #dbdbdb;
+    padding: 0px 10px;
+  }
+  .bottom .bottom-poster {
+    height: 90px;
+    width: 65px;
+    padding: 8px;
+    background-color: #fff;
+  }
+  .bottom-poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .bottom div p {
+    max-width: calc(100vw - 85px);
+    font-size: 26px;
+    line-height: 30px;
+    color: #293845;
+    padding-left: 15px;
+    letter-spacing: -0.04em;
+    word-break: break-word;
+  }
+  .session-day {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #293845;
+    margin-bottom: 20px;
+  }
+  .times-list {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .weekday-time {
+    width: 80px;
+    height: 45px;
+    background-color: #800006;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .weekday-time p {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #fafafa;
+  }
+  .seats-list {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 25px);
+    justify-content: space-between;
+  }
+  .seat {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .seat.available {
+    background-color: #c3cfd9;
+  }
+  .seat.unavailable {
+    background-color: #fbe192;
+  }
+  .seat.available.selected {
+    background-color: #8dd7cf;
+  }
+  .seat p {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+  }
+  .examples,
+  .subtitles {
+    display: flex;
+    justify-content: space-around;
+  }
+  .subtitles {
+    margin-bottom: 40px;
+  }
+  .subtitle {
+    font-size: 13px;
+    line-height: 15px;
+    color: #4e5a65;
+  }
+  .input-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #293845;
+  }
+  .input {
+    width: 100%;
+    height: 51px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+  }
+  .input::placeholder {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: #afafaf;
+  }
+  .confirmation {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 30px;
+  }
+  .proceed {
+    width: 225px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800006;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    border: none;
+    cursor: not-allowed;
+  }
+  .proceed.allowed {
+    cursor: pointer;
+  }
+  .success-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .success-data {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+    margin-right: 10px;
+  }
+  
